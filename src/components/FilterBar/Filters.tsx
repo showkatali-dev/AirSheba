@@ -5,7 +5,6 @@ function Filters({
   filterName: string;
   categories: { name: string; price: number }[];
 }) {
-  console.log(filterName, categories);
   return (
     <div>
       <div className="flex items-center justify-between mb-3">
@@ -19,6 +18,7 @@ function Filters({
               <input
                 type="checkbox"
                 className="checkbox checkbox-secondary checkbox-sm"
+                defaultChecked={i === 0}
               />
               <span className="ml-3">{category.name}</span>
             </label>

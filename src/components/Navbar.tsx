@@ -1,14 +1,31 @@
+import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const func = () => {
+      if (document.documentElement.scrollTop > 100) {
+        setScrolled(true);
+      } else setScrolled(false);
+    };
+
+    window.addEventListener("scroll", func);
+    return () => window.removeEventListener("scroll", func);
+  }, []);
+
   return (
-    <nav className="shadow shadow-neutral/5">
+    <nav
+      className={`shadow shadow-neutral/5 sticky top-0 z-20 ${
+        scrolled ? "bg-base-100" : ""
+      }`}
+    >
       <div className="flex items-center justify-between py-2 container mx-auto px-4 md:px-8 xl:px-12 shadow">
         <a href="#">
           <img src={logo} alt="logo" className="w-32" />
         </a>
         <div className="flex items-center gap-3">
-          <button className="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group active:scale-95">
+          <button className="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group active:scale-95 transition-transform duration-100">
             <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-red-500 rounded-full blur-md ease"></span>
             <span className="absolute inset-0 w-full h-full transition duration-700 group-hover:rotate-180 ease">
               <span className="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-purple-500 rounded-full blur-md"></span>

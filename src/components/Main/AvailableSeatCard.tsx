@@ -21,7 +21,7 @@ function AvailableSeatCard() {
           <h6>06:55pm</h6>
         </div>
       </div>
-      <div className="px-4 py-8 flex items-center justify-between gap-4">
+      <div className="px-4 py-8 flex items-center justify-between gap-3 2xl:gap-6">
         <div>
           <h6 className="flex items-center gap-1">
             <FcRating />

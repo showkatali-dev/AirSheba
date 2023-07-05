@@ -3,7 +3,7 @@ import { FiMoon, FiSun, FiSunrise, FiSunset } from "react-icons/fi";
 function TimeFilter() {
   const [selectedTime, setSelectedTime] = useState(0);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-3">
+    <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-3">
       <div
         className={`border-2 rounded-2xl p-5 text-center flex flex-col justify-center items-center gap-1 cursor-pointer ${
           selectedTime === 0 ? "border-secondary" : "border-neutral/5"
