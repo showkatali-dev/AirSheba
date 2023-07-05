@@ -3,7 +3,7 @@ import { FiMoon, FiSun, FiSunrise, FiSunset } from "react-icons/fi";
 function TimeFilter() {
   const [selectedTime, setSelectedTime] = useState(0);
   return (
-    <div className="grid grid-cols-2 gap-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-3">
       <div
         className={`border-2 rounded-2xl p-5 text-center flex flex-col justify-center items-center gap-1 cursor-pointer ${
           selectedTime === 0 ? "border-secondary" : "border-neutral/5"
@@ -12,7 +12,7 @@ function TimeFilter() {
       >
         <FiSunrise size={24} />
         <h3 className="font-semibold">Early Morning</h3>
-        <p className="text-base-content/50">(12:00am - 4:59am)</p>
+        <p className="text-base-content/50 text-sm">(12:00am - 4:59am)</p>
       </div>
 
       <div
@@ -23,7 +23,7 @@ function TimeFilter() {
       >
         <FiSun size={24} />
         <h3 className="font-semibold">Morning</h3>
-        <p className="text-base-content/50">(5:00am - 11:59am)</p>
+        <p className="text-base-content/50 text-sm">(5:00am - 11:59am)</p>
       </div>
 
       <div
@@ -34,7 +34,7 @@ function TimeFilter() {
       >
         <FiSunset size={24} />
         <h3 className="font-semibold">Afternoon</h3>
-        <p className="text-base-content/50">(12:00pm - 5:59pm)</p>
+        <p className="text-base-content/50 text-sm">(12:00pm - 5:59pm)</p>
       </div>
 
       <div
@@ -45,7 +45,7 @@ function TimeFilter() {
       >
         <FiMoon size={24} />
         <h3 className="font-semibold">Evening</h3>
-        <p className="text-base-content/50">(6:00pm - 11:59pm)</p>
+        <p className="text-base-content/50 text-sm">(6:00pm - 11:59pm)</p>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { filters } from "../assets/filters";
+import { filters } from "../../assets/filters";
 import Filters from "./Filters";
 import TimeFilter from "./TimeFilter";
 

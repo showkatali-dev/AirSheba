@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .tab-active {
   @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+}
+
+.custom-table th,
+td {
+  @apply border border-neutral/10 text-center px-1 py-3;
+}
+
+.custom-table th {
+  @apply text-xs;
 }
