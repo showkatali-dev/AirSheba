@@ -5,7 +5,7 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const func = () => {
-      if (document.documentElement.scrollTop > 100) {
+      if (document.documentElement.scrollTop > 50) {
         setScrolled(true);
       } else setScrolled(false);
     };
