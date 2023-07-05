@@ -9,6 +9,8 @@ function SearchBar() {
       <div className="flex flex-row flex-wrap gap-12 lg:items-end justify-between">
         <div className="flex flex-col justify-between gap-8">
           <CategoryTab />
+
+          {/* flying from */}
           <div className="flex items-center gap-4">
             <HiOutlineLocationMarker size={34} className="opacity-30" />
             <div className="self-end">
@@ -28,6 +30,8 @@ function SearchBar() {
             <HiOutlineUsers size="24" className="opacity-30" />
             <h5 className="font-medium">1 Traveler, Economy</h5>
           </div>
+
+          {/* flying to */}
           <div className="flex items-center gap-4">
             <HiOutlineLocationMarker size={34} className="opacity-30" />
             <div>
@@ -52,6 +56,8 @@ function SearchBar() {
               </p>
             </div>
           </div>
+
+          {/* search button */}
           <button className="relative inline-flex items-center justify-center p-4 mask-square w-fit h-fit overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group active:scale-95 transition-transform duration-100">
             <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-red-500 rounded-full blur-md ease"></span>
             <span className="absolute inset-0 w-full h-full transition duration-700 group-hover:rotate-180 ease">

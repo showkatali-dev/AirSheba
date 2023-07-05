@@ -4,6 +4,8 @@ import logo from "../assets/logo.png";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+
+  // for changing the navbar bg color after scroll
   useEffect(() => {
     const func = () => {
       if (document.documentElement.scrollTop > 50) {
@@ -22,10 +24,13 @@ function Navbar() {
       }`}
     >
       <div className="flex items-center justify-between py-2 container mx-auto px-4 md:px-8 xl:px-12 shadow">
+        {/* logo */}
         <Link to="/">
           <img src={logo} alt="logo" className="w-32" />
         </Link>
+
         <div className="flex items-center gap-3">
+          {/* link to the login page */}
           <Link
             to="/login"
             className="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group active:scale-95 transition-transform duration-100"
@@ -37,6 +42,8 @@ function Navbar() {
             </span>
             <span className="relative text-white">Sign in</span>
           </Link>
+
+          {/* dark mode and light mode toggler */}
           <label className="swap swap-rotate">
             <input
               type="checkbox"

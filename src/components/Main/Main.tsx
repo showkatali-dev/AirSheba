@@ -8,7 +8,7 @@ function Main() {
       <div className="breadcrumbs !font-medium p-0">
         <ul>
           <li>
-            <a className="hover:!no-underline">Choose daparting flight</a>
+            <a className="hover:!no-underline">Choose departing flight</a>
           </li>
           <li className="text-base-content/50 before:!opacity-100">
             Choose returning flight
@@ -16,7 +16,9 @@ function Main() {
           <li className="text-base-content/50 before:!opacity-100">Checkout</li>
         </ul>
       </div>
+
       <TimeTable />
+
       <div className="flex items-center justify-between gap-8">
         <p className="text-xs">
           Prices displayed include taxes and may changes based on availability.
@@ -28,6 +30,7 @@ function Main() {
           <HiChevronDown size={16} />
         </div>
       </div>
+
       <div className="space-y-8">
         <AvailableSeatCard />
         <AvailableSeatCard />

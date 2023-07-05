@@ -20,6 +20,7 @@ function TimeTable() {
         <HiArrowRight size={20} className="mt-1" />
       </div>
 
+      {/* table */}
       <div className="w-full overflow-x-auto">
         <table className="custom-table w-full overflow-x-auto">
           <thead>

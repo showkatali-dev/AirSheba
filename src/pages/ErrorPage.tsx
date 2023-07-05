@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 function ErrorPage() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-base-100">
-      <h2 className="text-6xl md:text-7xl text-neutral font-bold mb-4">404</h2>
-      <p className="mb-8 opacity-90">
-        The page you are looking for does not exist.
-      </p>
+    <div className="flex flex-col items-center justify-center h-[95vh] bg-base-100">
+      <h2 className="text-7xl text-neutral font-bold mb-4">404</h2>
+      <p className="mb-8">The page you are looking for does not exist.</p>
+
+      {/* back to home button */}
       <Link
         to="/"
         className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group active:scale-95 transition-transform duration-100"

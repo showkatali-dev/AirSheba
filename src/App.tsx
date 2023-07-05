@@ -40,6 +40,7 @@ function App() {
 
   return (
     <>
+      {/* initial shutter */}
       <div
         className={`fixed top-0 bottom-0 left-0 z-30 bg-base-100 origin-left delay-100 duration-1000 transition-all ${
           pageOpen ? "w-0" : "w-1/2"
@@ -50,6 +51,8 @@ function App() {
           pageOpen ? "w-0" : "w-1/2"
         }`}
       />
+
+      {/* router provider */}
       <RouterProvider router={router} fallbackElement={<Spinner />} />
     </>
   );
