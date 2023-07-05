@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function Filters({
   filterName,
   categories,
@@ -5,13 +7,17 @@ function Filters({
   filterName: string;
   categories: { name: string; price: number }[];
 }) {
+  const [sliced, setSliced] = useState(true);
+
+  const slicedCategories = sliced ? categories.slice(0, 5) : categories;
+
   return (
     <div>
       <div className="flex items-center justify-between mb-3">
         <h5 className="font-semibold">{filterName}</h5>
         <h5 className="font-semibold">Form</h5>
       </div>
-      {categories.map((category, i) => (
+      {slicedCategories.map((category, i) => (
         <div key={i} className="flex items-center justify-between">
           <div className="form-control">
             <label className="label cursor-pointer">
@@ -26,6 +32,17 @@ function Filters({
           <p>${category.price}</p>
         </div>
       ))}
+
+      {categories.length > 5 && (
+        <button
+          onClick={() => setSliced(false)}
+          className={`mt-4 font-medium text-secondary ${
+            !sliced ? "hidden" : ""
+          }`}
+        >
+          See more
+        </button>
+      )}
     </div>
   );
 }
