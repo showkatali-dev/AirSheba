@@ -22,88 +22,92 @@ function TimeTable() {
 
       <div className="w-full overflow-x-auto">
         <table className="custom-table w-full overflow-x-auto">
-          <tr>
-            <th>Mon, 15 May</th>
-            <th>Mon, 16 May</th>
-            <th>Mon, 17 May</th>
-            <th className="bg-primary/5">Mon, 18 May</th>
-            <th>Mon, 19 May</th>
-            <th>Mon, 20 May</th>
-            <th>Mon, 21 May</th>
-            <th className="!text-base italic">
-              Return <HiArrowDown size={20} className="inline ml-2" />
-            </th>
-          </tr>
-          <tr>
-            <td>$251</td>
-            <td>$251</td>
-            <td>-</td>
-            <td className="bg-primary/5">-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <th>Mon, 16 May</th>
-          </tr>
-          <tr>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td className="bg-primary/5">-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <th>Mon, 16 May</th>
-          </tr>
-          <tr>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td className="bg-primary/5">$251</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <th>Mon, 16 May</th>
-          </tr>
-          <tr>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td className="tab-active text-white">$251</td>
-            <td className="bg-primary/5">$251</td>
-            <td className="bg-primary/5">-</td>
-            <td className="bg-primary/5">-</td>
-            <th className="bg-primary/5">Mon, 16 May</th>
-          </tr>
-          <tr>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>-</td>
-            <th>Mon, 16 May</th>
-          </tr>
-          <tr>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <th>Mon, 16 May</th>
-          </tr>
-          <tr>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <td>$251</td>
-            <th>Mon, 16 May</th>
-          </tr>
+          <thead>
+            <tr>
+              <th>Mon, 15 May</th>
+              <th>Mon, 16 May</th>
+              <th>Mon, 17 May</th>
+              <th className="bg-primary/5">Mon, 18 May</th>
+              <th>Mon, 19 May</th>
+              <th>Mon, 20 May</th>
+              <th>Mon, 21 May</th>
+              <th className="!text-base italic">
+                Return <HiArrowDown size={20} className="inline ml-2" />
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$251</td>
+              <td>$251</td>
+              <td>-</td>
+              <td className="bg-primary/5">-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <th>Mon, 16 May</th>
+            </tr>
+            <tr>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td className="bg-primary/5">-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <th>Mon, 16 May</th>
+            </tr>
+            <tr>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td className="bg-primary/5">$251</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <th>Mon, 16 May</th>
+            </tr>
+            <tr>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td className="tab-active text-white">$251</td>
+              <td className="bg-primary/5">$251</td>
+              <td className="bg-primary/5">-</td>
+              <td className="bg-primary/5">-</td>
+              <th className="bg-primary/5">Mon, 16 May</th>
+            </tr>
+            <tr>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>-</td>
+              <th>Mon, 16 May</th>
+            </tr>
+            <tr>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <th>Mon, 16 May</th>
+            </tr>
+            <tr>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <td>$251</td>
+              <th>Mon, 16 May</th>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>

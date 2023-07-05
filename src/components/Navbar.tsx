@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 function Navbar() {
@@ -21,20 +22,22 @@ function Navbar() {
       }`}
     >
       <div className="flex items-center justify-between py-2 container mx-auto px-4 md:px-8 xl:px-12 shadow">
-        <a href="#">
+        <Link to="/">
           <img src={logo} alt="logo" className="w-32" />
-        </a>
+        </Link>
         <div className="flex items-center gap-3">
-          <button className="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group active:scale-95 transition-transform duration-100">
+          <Link
+            to="/login"
+            className="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group active:scale-95 transition-transform duration-100"
+          >
             <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-red-500 rounded-full blur-md ease"></span>
             <span className="absolute inset-0 w-full h-full transition duration-700 group-hover:rotate-180 ease">
               <span className="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-purple-500 rounded-full blur-md"></span>
               <span className="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-pink-500 rounded-full blur-md"></span>
             </span>
             <span className="relative text-white">Sign in</span>
-          </button>
+          </Link>
           <label className="swap swap-rotate">
-            {/* this hidden checkbox controls the state */}
             <input
               type="checkbox"
               defaultChecked={false}
