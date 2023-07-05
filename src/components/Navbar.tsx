@@ -23,7 +23,7 @@ function Navbar() {
         scrolled ? "bg-base-100" : ""
       }`}
     >
-      <div className="flex items-center justify-between py-2 container mx-auto px-4 md:px-8 xl:px-12 shadow">
+      <div className="flex items-center justify-between py-2 container mx-auto px-4 md:px-8 xl:px-12">
         {/* logo */}
         <Link to="/">
           <img src={logo} alt="logo" className="w-32" />
@@ -47,7 +47,9 @@ function Navbar() {
           <label className="swap swap-rotate">
             <input
               type="checkbox"
-              defaultChecked={false}
+              defaultChecked={
+                document.documentElement.getAttribute("data-theme") === "light"
+              }
               onChange={(e) =>
                 e.target.checked
                   ? document.documentElement.setAttribute("data-theme", "light")

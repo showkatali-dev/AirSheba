@@ -1,6 +1,6 @@
 # My Voiaj
 
-My Voiaj is just an online airline ticket purchasing website template.
+My Voiaj is a React based travel agency website template.
 
 ## Features
 
