@@ -4,7 +4,7 @@ import TimeFilter from "./TimeFilter";
 
 function FilterBar() {
   return (
-    <div className="col-span-1 flex flex-col gap-10">
+    <aside className="col-span-1 flex flex-col gap-10">
       <div className="flex items-center justify-between">
         <h3 className="font-bold text-xl">Filters</h3>
         <button className="btn btn-sm btn-ghost border-neutral/10">
@@ -27,7 +27,7 @@ function FilterBar() {
         <h5 className="font-semibold mb-5">Arrival time in Singapore</h5>
         <TimeFilter />
       </div>
-    </div>
+    </aside>
   );
 }
 

@@ -4,7 +4,7 @@ import TimeTable from "./TimeTable";
 
 function Main() {
   return (
-    <div className="col-span-2 flex flex-col gap-10">
+    <main className="col-span-2 flex flex-col gap-10">
       <div className="breadcrumbs !font-medium p-0">
         <ul>
           <li>
@@ -34,7 +34,7 @@ function Main() {
         <AvailableSeatCard />
         <AvailableSeatCard />
       </div>
-    </div>
+    </main>
   );
 }
 
