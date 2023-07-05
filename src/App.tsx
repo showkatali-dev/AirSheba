@@ -1,3 +1,4 @@
+import FilterBar from "./components/FilterBar";
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
 
@@ -7,6 +8,9 @@ function App() {
       <Navbar />
       <div className="container mx-auto px-4 md:px-8 xl:px-12 py-12">
         <SearchBar />
+        <div className="grid grid-cols-3 mt-12">
+          <FilterBar />
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
-    <div className="shadow shadow-neutral/5">
+    <nav className="shadow shadow-neutral/5">
       <div className="flex items-center justify-between py-2 container mx-auto px-4 md:px-8 xl:px-12 shadow">
         <a href="#">
           <img src={logo} alt="logo" className="w-32" />
@@ -51,7 +51,7 @@ function Navbar() {
           </label>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 
