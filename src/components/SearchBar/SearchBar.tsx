@@ -50,8 +50,9 @@ function SearchBar() {
               <span className="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-purple-500 rounded-full blur-md"></span>
               <span className="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-pink-500 rounded-full blur-md"></span>
             </span>
-            <span className="relative text-white">
-              <BiSearch size={32} />
+            <span className="relative text-white flex items-center gap-1 text-xl xl:text-4xl">
+              <BiSearch />
+              <span className="xl:hidden">Search</span>
             </span>
           </button>
         </div>
