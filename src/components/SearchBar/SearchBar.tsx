@@ -2,6 +2,7 @@ import { BiSearch } from "react-icons/bi";
 import { HiOutlineCalendar, HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineUsers } from "react-icons/hi2";
 import CategoryTab from "./CategoryTab";
+import SearchInput from "./SearchInput";
 
 function SearchBar() {
   return (
@@ -13,16 +14,7 @@ function SearchBar() {
           {/* flying from */}
           <div className="flex items-center gap-4">
             <HiOutlineLocationMarker size={34} className="opacity-30" />
-            <div className="self-end">
-              <h2 className="text-2xl font-semibold">Location</h2>
-              <input
-                type="text"
-                name="from"
-                id="from"
-                className="input bg-transparent focus:outline-0 px-0 h-8 placeholder:text-base-content/50"
-                placeholder="Flying From"
-              />
-            </div>
+            <SearchInput fieldName="Flying from" />
           </div>
         </div>
         <div className="flex flex-col justify-between gap-10">
@@ -34,16 +26,7 @@ function SearchBar() {
           {/* flying to */}
           <div className="flex items-center gap-4">
             <HiOutlineLocationMarker size={34} className="opacity-30" />
-            <div>
-              <h2 className="text-2xl font-semibold">Location</h2>
-              <input
-                type="text"
-                name="from"
-                id="from"
-                className="input bg-transparent focus:outline-0 px-0 h-8 placeholder:text-base-content/50"
-                placeholder="Flying To"
-              />
-            </div>
+            <SearchInput fieldName="Flying to" />
           </div>
         </div>
         <div className="flex justify-between gap-10">

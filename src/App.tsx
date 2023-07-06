@@ -28,7 +28,7 @@ function App() {
 
     const openPage = setTimeout(() => {
       setPageOpen(true);
-    }, 2010);
+    }, 2200);
 
     return () => {
       clearTimeout(loadingDisable);
