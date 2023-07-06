@@ -88,6 +88,7 @@ function SearchInput({ fieldName }: { fieldName: string }) {
         id={fieldName.split(" ")[1]}
         className="input bg-transparent focus:outline-0 px-0 h-8 placeholder:text-base-content/50 relative focus:z-20"
         placeholder="Airport Code / city"
+        autoComplete="off"
         onChange={(e) => handleSearch(e.target.value)}
         onFocus={(e) => handleInputFocus(e.target.value)}
         onBlur={handleInputFocusLose}
