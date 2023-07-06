@@ -81,12 +81,12 @@ function SearchInput({ fieldName }: { fieldName: string }) {
 
   return (
     <div className="self-end relative">
-      <h2 className="text-2xl font-semibold">{fieldName}</h2>
+      <h2 className="text-2xl font-semibold mb-1">{fieldName}</h2>
       <input
         type="text"
         ref={inputRef}
         id={fieldName.split(" ")[1]}
-        className="input bg-transparent focus:outline-0 px-0 h-8 placeholder:text-base-content/50"
+        className="input bg-transparent focus:outline-0 px-0 h-8 placeholder:text-base-content/50 relative z-20"
         placeholder="Airport Code / city"
         onChange={(e) => handleSearch(e.target.value)}
         onFocus={(e) => handleInputFocus(e.target.value)}
@@ -95,7 +95,7 @@ function SearchInput({ fieldName }: { fieldName: string }) {
 
       {/* the auto suggestion container */}
       {openSuggestion && matchedAirport && (
-        <div className="absolute top-full left-0 w-80 max-h-96 overflow-y-auto rounded bg-base-100 py-4 z-10">
+        <div className="absolute top-[calc(100%-40px)] -left-2 w-80 max-h-96 overflow-y-auto rounded-lg bg-base-100 shadow-xl shadow-neutral/10 pt-12 z-10">
           {/* the best matched city name */}
           <h3 className="flex items-center gap-2 mb-2 text-secondary px-2">
             <HiOutlineLocationMarker size={24} />
