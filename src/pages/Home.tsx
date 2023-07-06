@@ -18,7 +18,7 @@ function Home() {
         <div className="md:grid md:grid-cols-3 mt-12 md:space-y-0 md:space-x-12">
           <button
             onClick={() => setOpenFilter(true)}
-            className="btn border-neutral/10 btn-ghost btn-square ml-auto flex md:hidden text-secondary mb-2"
+            className="btn border-neutral/10 bg-neutral/5 btn-ghost btn-square ml-auto flex md:hidden text-secondary mb-2"
           >
             <HiOutlineFilter size={20} />
           </button>
