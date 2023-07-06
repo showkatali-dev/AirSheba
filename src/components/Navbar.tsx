@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`shadow shadow-neutral/5 sticky top-0 z-50 ${
+      className={`shadow shadow-neutral/5 sticky top-0 z-40 ${
         scrolled ? "bg-base-100" : ""
       }`}
     >

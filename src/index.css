@@ -45,3 +45,7 @@ td {
 .breadcrumbs::-webkit-scrollbar {
   @apply hidden;
 }
+
+.filter-bar::-webkit-scrollbar {
+  @apply w-1;
+}
